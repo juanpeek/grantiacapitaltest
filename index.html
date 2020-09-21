@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grantia Capital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+   
+
+</head>
+<body>
+    <p>
+        Realizar una página que contenga un div contenedor y varios div
+“externos”. Los externos podrán moverse (drag and drop) dentro del
+div contenedor y quedarse en una posición dentro del área del
+contenedor. En caso de superposición de dos divs externos (dentro
+del contenedor), el que ha sido movido retornará a la posición
+anterior. El color de los div externos cambiará en función de su
+posición dentro del div contenedor (naranja a la derecha del todo,
+azul a la izquierda del todo, colores intermedios en las posiciones
+intermedias).
+    </p>
+<div class="container">
+    <div><h4>Divs externos</h4></div>
+    <div id="cuadros">
+        <div class="ext" style="top:140px;left:50px"></div>
+        <div class="ext" style="top:140px;left:100px"></div>
+        <div class="ext" style="top:140px;left:150px"></div>
+        <div class="ext" style="top:140px;left:200px"></div>
+        <div class="ext" style="top:140px;left:250px"></div>
+        <div class="ext" style="top:140px;left:300px"></div>
+    </div>
+    <div id="principal" class="suelta">
+
+    </div>
+</div>
+</body>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</html>
